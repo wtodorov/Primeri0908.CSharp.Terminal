@@ -8,13 +8,18 @@ namespace Modul02
 		{
 
 // Дефиниране на променливи
-			int a=15;
-			int b = 10;
+			int a=10;
+			int b = 5;
 			int sum = 0;
+			string program_name = "Модул 02 - Примери";
+			string program_version = "1.0";
 // Събиране на числа
 			sum=a+b;
 				
 // Писане в конзолата
+			Console.WriteLine(program_name);
+			Console.WriteLine ("Версия: " + program_version + "\n\n");
+
 			Console.Write(a);
 			Console.Write(" + ");
 			Console.Write(b);
