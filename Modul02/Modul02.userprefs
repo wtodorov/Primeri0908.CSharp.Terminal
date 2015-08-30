@@ -1,10 +1,11 @@
-﻿<Properties StartupItem="Aufgabe01\Aufgabe01.csproj">
+﻿<Properties StartupItem="Aufgabe02\Aufgabe02.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="TableProject\Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Aufgabe01\Program.cs">
     <Files>
       <File FileName="Modul02\Program.cs" Line="1" Column="1" />
       <File FileName="ReadFromCommandLine\Program.cs" Line="1" Column="1" />
       <File FileName="TableProject\Program.cs" Line="8" Column="4" />
+      <File FileName="Aufgabe01\Program.cs" Line="10" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
