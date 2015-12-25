@@ -10,7 +10,7 @@ namespace Modul05
 			string usercommand = "";
 
 			//Потребителски команди
-			do {
+		do {
 				Console.Write("$ "); usercommand =Console.ReadLine(); 
 				if ( usercommand.Contains ("cmd01")) cmd01 (usercommand);
 				if ( usercommand.Contains ("cmd02")) Console.WriteLine (cmd02 (usercommand));
@@ -37,6 +37,10 @@ namespace Modul05
 						Console.WriteLine(0);
 					}
 				}
+				if ( usercommand.Contains ( "cmd05" ))
+				{
+					Console.WriteLine ("Брой четни числа:" + cmd05 ( usercommand ).Length.ToString() );
+				}
 			} while (usercommand != "exit");
 		}
 	
@@ -58,7 +62,7 @@ namespace Modul05
     //Да върнат параметри
 
 
-	}
+	    }
 		public static int cmd02 ( string _input )
 		{
 			int _temp = 0;
@@ -67,7 +71,7 @@ namespace Modul05
 				_temp = _temp * _temp * _temp;
 			}
 			return _temp;
-			}
+		}
 		public static bool cmd03 (string _input, out double _i) // cmd03 45 --> 45*45
 		{
 			try
@@ -83,7 +87,7 @@ namespace Modul05
 				}
 			}
 			catch{
-			}
+		}
 
 			_i=0;
 			return false;
@@ -96,6 +100,36 @@ namespace Modul05
 			return ( _temp > 0 );
 		}
 
+		public static string[] cmd05 ( string _input)
+		{
+			try
+			{
+				int _border = 0;
+				string _temp = "";
 
+				if ( int.TryParse ( _input.Split(' ')[1], out _border ))
+				{
+					for ( int i = 0 ; i < _border; i++ )
+					{
+						if ( i % 2 == 0)  _temp += i.ToString(); 
+						if ( i != _border - 1 && i % 2 == 0 ) _temp += ",";
+					}
+					Console.WriteLine( _temp );  //само за проверка
+					return _temp.Split(',');
+				}
+
+			} catch {
+
+			}
+			return new string[] { "0" };
+		
+	    }
 	}
 }
+
+	
+	
+
+
+
+
